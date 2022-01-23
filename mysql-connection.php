@@ -1,9 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
 <?php
-$link = mysql_connect('localhost','root','gnu123');
-if ($link){
-	die('Could not Connect: '.mysql_error());
+echo "Trying to Connect SQL Server <br>";
+$link = mysqli_connect("localhost","root","Adarsh@1234");
+if (!$link){
+	die('Could not Connect: '.mysqli_error());
 }
 echo "Connected Successfully";
-mysql_close($link);
+mysqli_close($link);
 ?>
-
+</body>
+</html>
