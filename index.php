@@ -9,6 +9,7 @@ $link = mysqli_connect($temp,$username,$password);
 if (!$link){
         die('Could not Connect: '.mysqli_error());
 }
+        
 echo "Connected Successfully";
 mysqli_close($link);
 ?>
