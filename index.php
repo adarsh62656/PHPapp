@@ -2,9 +2,9 @@
 <html>
 <body>
 <?php
-$endpoint=strval(file_get_contents("/var/www/html/cred/db_end_point"));
-$username=strval(file_get_contents("/var/www/html/cred/db_username"));
-$password=strval(file_get_contents("/var/www/html/cred/db_password"));
+$endpoint=hostname1;
+$username=username1;
+$password=password1;
 $link = mysqli_connect($temp,$username,$password);
 if (!$link){
         die('Could not Connect: '.mysqli_error());
